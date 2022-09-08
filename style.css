@@ -1,0 +1,52 @@
+@keyframes elementHover {
+  from {
+    background-color: aqua;
+    border: 2px solid blue;
+    color: blue;
+    margin-bottom: 0px;
+    font-size: inherit;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  to {
+    background-color: pink;
+    border: 2px dashed limegreen;
+    margin-bottom: 300px;
+    color: brown;
+    flex-direction: column-reverse;
+    font-size: 40px;
+    font-family: cursive;
+    text-decoration: none;
+  }
+}
+
+.layout-head {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  padding: 8px;
+  box-shadow: 0 0 2px 2px;
+  border: 2px solid blue;
+  box-sizing: border-box;
+}
+
+.content-wrap div {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+  padding: 8px;
+  margin-top: 8px;
+  box-shadow: 0 0 2px 2px;
+  box-sizing: border-box;
+}
+
+.layout-head:hover,
+.content-wrap:hover {
+  color: turquoise;
+
+  background-color: pink;
+  border: 2px dashed limegreen;
+  animation-name: elementHover;
+  animation-duration: 2s;
+  margin-bottom: 300px;
+}
